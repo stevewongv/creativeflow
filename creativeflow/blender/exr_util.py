@@ -37,7 +37,7 @@ def read_depth(exr):
 
 def get_size(exr):
     dw = exr.header()['dataWindow']
-    size = (dw.max.x - dw.min.x + 1, dw.max.y - dw.min.y + 1)
+    size = (dw.max.y - dw.min.y + 1, dw.max.x - dw.min.x + 1)
     return size
 
 
